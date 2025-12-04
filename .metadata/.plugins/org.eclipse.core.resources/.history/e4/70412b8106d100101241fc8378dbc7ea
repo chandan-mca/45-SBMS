@@ -1,0 +1,14 @@
+package in.ashokit;
+
+public class Car extends Engine{
+	
+	public void drive() {
+		int engStatus = super().drive();
+		
+		if(engStatus == 1) {
+			System.out.println("Journey Started...");
+		} else {
+			System.out.println("Engine Problem...");
+		}
+	}
+}

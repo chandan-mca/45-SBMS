@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;in.ashokit&apos; to &apos;02_App/src&apos;&#x0D;&#x0A;- Original project: &apos;01_App&apos;&#x0D;&#x0A;- Destination element: &apos;02_App/src&apos;&#x0D;&#x0A;- Original element: &apos;01_App/src/in.ashokit&apos;" description="Copy package" destination="=02_App/src" element1="/src&lt;in.ashokit" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1764849420690" version="1.0"/>
+</session>

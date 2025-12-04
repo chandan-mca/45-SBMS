@@ -1,0 +1,11 @@
+package in.ashokit;
+
+public class Engine {
+	
+	public int start() {
+		//logics
+		System.out.println("Engine started...");
+		return 1;
+	}
+
+}
