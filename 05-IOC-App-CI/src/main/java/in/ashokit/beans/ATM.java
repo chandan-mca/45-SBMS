@@ -1,0 +1,17 @@
+package in.ashokit.beans;
+
+public class ATM {
+	
+	private Printer printer; // default value is null
+
+	public ATM(Printer printer) {
+		System.out.println("ATM - Constructor Executed...");
+		this.printer = printer;
+	}
+	
+	public void withdraw(int amount) {
+		System.out.println("Amount deducted");
+		printer.print();
+	}
+
+}

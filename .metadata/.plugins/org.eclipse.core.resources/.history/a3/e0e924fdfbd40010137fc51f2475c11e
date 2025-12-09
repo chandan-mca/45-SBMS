@@ -1,0 +1,18 @@
+package in.ashokit.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import in.ashokit.beans.ATM;
+
+public class Test {
+	public static void main(String[] args) {
+
+		// starting IOC by giving xml as input
+		ApplicationContext context = 
+				new ClassPathXmlApplicationContext("beans.xml");
+
+		ATM atm = context.getBean(ATM.class);
+		atm.withdraw();;
+	}
+}

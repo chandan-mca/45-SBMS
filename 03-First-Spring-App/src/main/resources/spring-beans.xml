@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<!-- bean definitions here -->
-	<bean id="eng" class="in.ashokit.Engine" />
+	<bean id="engine" class="in.ashokit.Engine" />
 
 	<bean id="car" class="in.ashokit.Car" />
 
