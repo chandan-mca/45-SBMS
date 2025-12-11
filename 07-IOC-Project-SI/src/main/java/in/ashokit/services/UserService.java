@@ -1,6 +1,7 @@
 package in.ashokit.services;
 
 import in.ashokit.daos.UserDao;
+import in.ashokit.entites.User;
 
 public class UserService {
 
@@ -27,6 +28,19 @@ public class UserService {
 	public void setUserDao(UserDao userDao) {
 		this.userDao = userDao;
 		System.out.println("setUserDao - Setter Method called...");
+	}
+	
+	public void userRegistration(User user) {
+		System.out.println("Registartion Completed...");
+		//encrypt the password
+		passwordService.passwordEncrypt(user.getPassword());
+		
+		//Save user in DB
+		userDao.saveUserData(user);
+		
+		//Email sent to user
+		emailService.emailSent(user.getEmail());
+		
 	}
 
 }

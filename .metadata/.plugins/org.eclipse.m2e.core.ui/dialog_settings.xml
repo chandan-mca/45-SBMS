@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\03.  Ashok IT\03  SBMS\45-SBMS\workspace\06-IOC-App-SI-CI"/>
 			<item value="D:\03.  Ashok IT\03  SBMS\45-SBMS\workspace\03-First-Spring-App"/>
 			<item value="D:\03.  Ashok IT\03  SBMS\45-SBMS\workspace\02_App\src\in\ashokit\Test.java"/>
 		</list>
@@ -50,6 +51,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="07-IOC-Project-SI"/>
 			<item value="04-IOC-App"/>
 			<item value="01-Spring-App"/>
 		</list>

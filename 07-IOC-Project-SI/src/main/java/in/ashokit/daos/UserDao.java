@@ -1,5 +1,7 @@
 package in.ashokit.daos;
 
+import in.ashokit.entites.User;
+
 public class UserDao {
 
 	public UserDao() {

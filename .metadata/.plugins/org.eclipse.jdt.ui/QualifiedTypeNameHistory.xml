@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="in.ashokit.Engine"/>
+    <fullyQualifiedTypeName name="in.ashokit.Printer"/>
+    <fullyQualifiedTypeName name="in.ashokit.ATM"/>
+    <fullyQualifiedTypeName name="in.ashokit.services.PasswordService"/>
+    <fullyQualifiedTypeName name="in.ashokit.services.EmailService"/>
+    <fullyQualifiedTypeName name="in.ashokit.daos.UserDao"/>
+    <fullyQualifiedTypeName name="in.ashokit.services.UserService"/>
 </qualifiedTypeNameHistroy>
