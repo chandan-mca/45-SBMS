@@ -1,13 +1,2 @@
 INDEX VERSION 1.134+D:\03.  Ashok IT\03  SBMS\45-SBMS\workspace\.metadata\.plugins\org.eclipse.jdt.core
-2536056634.index
-3542146424.index
-3858337302.index
 1865797976.index
-1548378443.index
-1916311592.index
-3498326943.index
-1828764359.index
-3692802658.index
-4103200453.index
-1581079698.index
-2790220239.index

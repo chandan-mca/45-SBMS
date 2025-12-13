@@ -7,4 +7,5 @@
     <fullyQualifiedTypeName name="in.ashokit.services.EmailService"/>
     <fullyQualifiedTypeName name="in.ashokit.daos.UserDao"/>
     <fullyQualifiedTypeName name="in.ashokit.services.UserService"/>
+    <fullyQualifiedTypeName name="in.ashokit.controllers.UserController"/>
 </qualifiedTypeNameHistroy>
