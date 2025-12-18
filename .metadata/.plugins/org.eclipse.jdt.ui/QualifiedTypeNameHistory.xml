@@ -8,4 +8,6 @@
     <fullyQualifiedTypeName name="in.ashokit.daos.UserDao"/>
     <fullyQualifiedTypeName name="in.ashokit.services.UserService"/>
     <fullyQualifiedTypeName name="in.ashokit.controllers.UserController"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
 </qualifiedTypeNameHistroy>
