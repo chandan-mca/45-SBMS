@@ -1,13 +1,14 @@
 eclipse.preferences.version=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.devtools=1
 org.springframework.ide.eclipse.boot.wizard.PopularityTracker.web=1
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=09-SpringBoot-App
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=4.0.0
+org.springframework.ide.eclipse.boot.wizard.PopularityTracker.webflux=1
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.artifactId=10-SpringBoot-App-2
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.bootVersion=4.0.1
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.description=Demo project for Spring Boot
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.groupId=in.ashokit
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.javaVersion=25
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.language=java
-org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=09-SpringBoot-App
+org.springframework.ide.eclipse.boot.wizard.PreferredSelections.name=10-SpringBoot-App-2
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packageName=in.ashokit
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.packaging=jar
 org.springframework.ide.eclipse.boot.wizard.PreferredSelections.type=MAVEN

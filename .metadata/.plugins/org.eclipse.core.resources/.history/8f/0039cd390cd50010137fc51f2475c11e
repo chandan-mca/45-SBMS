@@ -1,9 +1,0 @@
-package in.ashokit.services;
-
-public class PasswordService {
-
-	public PasswordService() {
-		System.out.println("PasswordService - Constructor...");
-	}
-
-}
