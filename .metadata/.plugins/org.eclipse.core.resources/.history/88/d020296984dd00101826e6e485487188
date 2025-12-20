@@ -1,0 +1,13 @@
+package in.ashokit.securities;
+
+
+public class AppSecurity {
+	
+	private AppSecurity appSecurity;
+	
+	public AppSecurity(AppSecurity appSecurity) {
+		this.appSecurity = appSecurity;
+		System.out.println("AppSecurity : Constructor");
+	}
+
+}
