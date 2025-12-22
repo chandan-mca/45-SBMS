@@ -1,0 +1,23 @@
+package in.ashokit;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import in.ashokit.dao.UserDao;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+		
+		UserDao dao1 = context.getBean(UserDao.class);
+		System.out.println("DAO-1: " + dao1.hashCode());
+		
+		UserDao dao2 = context.getBean(UserDao.class);
+		System.out.println("DAO-2: " + dao2.hashCode());
+		
+	}
+
+}
