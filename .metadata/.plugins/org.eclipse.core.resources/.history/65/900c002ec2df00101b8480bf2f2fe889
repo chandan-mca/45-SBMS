@@ -1,0 +1,11 @@
+package in.ashokit;
+
+public class User {
+
+	private int age;
+
+	public void getAge() {
+		System.out.println("Age :: " + age);
+	}
+
+}

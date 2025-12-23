@@ -1,0 +1,19 @@
+package in.ashokit.service;
+
+public class UserService {
+
+	public UserService() {
+		System.out.println("UserService  ::  Constructor");
+	}
+
+	public String findUserById(int userId) {
+		if (userId == 1) {
+			return "Raja";
+		} else if (userId == 2) {
+			return "Rani";
+		} else {
+			return "Invalid User Id";
+		}
+	}
+
+}

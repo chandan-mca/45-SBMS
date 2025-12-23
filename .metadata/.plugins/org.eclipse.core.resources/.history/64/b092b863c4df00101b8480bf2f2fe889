@@ -1,0 +1,32 @@
+package in.ashokit;
+
+import java.lang.reflect.Field;
+
+public class Test {
+
+	public static void main(String[] args) throws Exception {
+		
+//		User user = new User();
+//		user.age = 18;
+//		user.printAge();
+		
+		//1. Load the class into JVM
+		Class<?> cls = Class.forName("in.ashokit.user");
+		
+		//2. 
+		Field field = cls.getDeclaredField("age");
+		field.setAccessible(true);
+		
+		//3.
+		Object obj = (Object) cls;
+		field.set(obj, 30);
+		
+		//4.
+		User user = (User) obj ;
+		
+		//5.
+		user.printAge();
+		
+	}
+
+}
