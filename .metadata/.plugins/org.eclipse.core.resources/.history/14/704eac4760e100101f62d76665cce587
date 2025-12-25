@@ -1,0 +1,23 @@
+package in.ashokit.dao;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MysqlUserDaoImpl implements UserDao {
+
+	public MysqlUserDaoImpl() {
+		System.out.println("UserDao  :: Constructor");
+	}
+
+	@Override
+	public String findUsernameById(int userId) {
+		if (userId == 1) {
+			return "Raja";
+		} else if (userId == 2) {
+			return "Rani";
+		} else {
+			return "Invalid User Id";
+		}
+	}
+
+}

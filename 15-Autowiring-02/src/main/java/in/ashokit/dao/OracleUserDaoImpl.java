@@ -1,0 +1,25 @@
+package in.ashokit.dao;
+
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component("oracle")
+//@Primary
+public class OracleUserDaoImpl implements UserDao {
+
+	public OracleUserDaoImpl() {
+		System.out.println("OracleUserDaoImpl  :: Constructor");
+	}
+
+	@Override
+	public String findUsernameById(int userId) {
+		if (userId == 1) {
+			return "Raja";
+		} else if (userId == 2) {
+			return "Rani";
+		} else {
+			return "Invalid User Id";
+		}
+	}
+
+}

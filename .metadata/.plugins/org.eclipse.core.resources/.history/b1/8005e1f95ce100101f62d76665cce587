@@ -1,0 +1,31 @@
+package in.ashokit.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import in.ashokit.dao.UserDao;
+
+@Component
+public class UserService {
+
+	// @Autowired
+	private UserDao userDao;
+
+
+	//@Autowired
+	public UserService(UserDao userDao) {
+		System.out.println("UserService  ::  Parameterised - Constructor");
+		this.userDao = userDao;
+	}
+
+	// @Autowired
+	public void setUserDao(UserDao userDao) {
+		System.out.println("setUserDao()  ::  Method Called");
+		this.userDao = userDao;
+	}
+
+	public void getName(int id) {
+		String name = userDao.findUsernameById(id);
+		System.out.println(name);
+	}
+}
