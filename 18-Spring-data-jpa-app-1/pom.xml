@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>in.ashokit</groupId>
-	<artifactId>18-Spring-data-jpa-app-01</artifactId>
+	<artifactId>18-Spring-data-jpa-app-1</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>18-Spring-data-jpa-app-01</name>
+	<name>18-Spring-data-jpa-app-1</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
