@@ -63,7 +63,7 @@ public class Application {
 		empByIds.forEach(System.out::println);
 
 		// find all
-		List<Employee> allEmps = employeeRepository.findAll();
+		Iterable<Employee> allEmps = employeeRepository.findAll();
 		allEmps.forEach(System.out::println);
 
 		context.close();
