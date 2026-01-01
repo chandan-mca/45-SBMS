@@ -1,0 +1,58 @@
+package in.ashokit;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.core.io.ClassPathResource;
+
+import in.ashokit.entities.Product;
+import in.ashokit.repositories.ProductRepository;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+
+		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+
+		ProductRepository productRepository = context.getBean(ProductRepository.class);
+
+		List<Product> products = new ArrayList<>();
+
+		try (BufferedReader br = new BufferedReader(
+				new InputStreamReader(new ClassPathResource("products.csv").getInputStream()))) {
+
+			String line;
+			while ((line = br.readLine()) != null) {
+
+			    String[] data = line.split(",");
+
+			    Product p = new Product();
+			    p.setPId(Integer.parseInt(data[0].replace("\uFEFF", "").trim()));
+			    p.setPName(data[1].trim());
+			    p.setPPrice(Double.parseDouble(data[2].trim()));
+
+			    products.add(p);
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		// saveAll()
+		productRepository.saveAll(products);
+		System.out.println("Data saved in DB from CSV file...");
+
+		// findAll()
+		List<Product> allEmps = productRepository.findAll();
+		allEmps.forEach(System.out::println);
+
+		context.close();
+	}
+}
+

@@ -1,0 +1,32 @@
+package in.ashokit;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import in.ashokit.entities.ContactsMasterEntity;
+import in.ashokit.entities.Employee;
+import in.ashokit.repositories.ContactsMasterRepo;
+import in.ashokit.repositories.EmployeeRepository;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+
+		EmployeeRepository employeeRepository = context.getBean(EmployeeRepository.class);
+		
+		Employee employee = new Employee();
+		employee.setEmpId(101);
+		employee.setEmpName("Chandan Agrawal");
+		employee.setEmpSalary(100000.00);
+		employee.setEmpGender("Male");
+		employee.setEmpCountry("India");
+		
+		employeeRepository.save(employee);
+
+		context.close();
+	}
+
+}

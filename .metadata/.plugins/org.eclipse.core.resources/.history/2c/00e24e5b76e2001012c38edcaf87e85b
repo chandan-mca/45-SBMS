@@ -1,0 +1,10 @@
+package in.ashokit.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class MyCmdRunner implements CommandLineRunner {
+
+
+
+}

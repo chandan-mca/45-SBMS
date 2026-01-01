@@ -1,0 +1,73 @@
+package in.ashokit;
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+import in.ashokit.entities.Employee;
+import in.ashokit.repositories.EmployeeRepository;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+
+		EmployeeRepository employeeRepository = context.getBean(EmployeeRepository.class);
+		System.out.println(employeeRepository.getClass().getName());
+		
+	/*
+		//save()
+		employee.setEmpId(103);
+		employee.setEmpName("Ashok");
+		employee.setEmpSalary(120000.00);
+		employee.setEmpGender("Male");
+		employee.setEmpCountry("UK");
+
+		employeeRepository.save(employee);  //upsert method
+		System.out.println("########### Record Inserted.... ###########");
+	*/
+	/*
+		saveAll()
+		Employee employee1 = new Employee();
+		employee1.setEmpId(104);
+		employee1.setEmpName("John");
+		employee1.setEmpSalary(20000.00);
+		employee1.setEmpGender("Male");
+		employee1.setEmpCountry("Japan");
+		
+		Employee employee2 = new Employee();
+		employee2.setEmpId(105);
+		employee2.setEmpName("Smith");
+		employee2.setEmpSalary(10000.00);
+		employee2.setEmpGender("Male");
+		employee2.setEmpCountry("Canada");
+
+		List<Employee> empList = Arrays.asList(employee1, employee2);
+		employeeRepository.saveAll(empList);  //upsert method
+		System.out.println("########### All Records Inserted.... ###########");
+	*/	
+		//findById()
+		Optional<Employee> byId = employeeRepository.findById(102);
+		if(byId.isPresent()) {
+			System.out.println(byId.get());
+		}
+		
+		// find by multiple IDs
+		List<Integer> ids = Arrays.asList(3, 4);
+		Iterable<Employee> empByIds = employeeRepository.findAllById(ids);
+		empByIds.forEach(System.out::println);
+
+		// find all
+		List<Employee> allEmps = employeeRepository.findAll();
+		allEmps.forEach(System.out::println);
+
+		
+		context.close();
+	}
+
+}

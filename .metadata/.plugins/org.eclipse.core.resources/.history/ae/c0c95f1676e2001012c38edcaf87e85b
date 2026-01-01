@@ -1,0 +1,9 @@
+package in.ashokit.beans;
+
+public class MyCmdRunnerimplements CommandLineRunner {
+
+	public MyCmdRunner()  {
+		// TODO Auto-generated constructor stub
+	}
+
+}

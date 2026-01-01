@@ -4,6 +4,7 @@
 	<section name="java.lang.Class">
 		<item key="replaceBarOpen" value="false"/>
 		<list key="findhistory">
+			<item value="CrudRepository"/>
 			<item value="AnnotationConfigReactiveWebServerApplicationContext"/>
 		</list>
 	</section>

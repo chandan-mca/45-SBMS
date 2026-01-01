@@ -1,0 +1,12 @@
+package in.ashokit.repositories;
+
+import java.io.Serializable;
+
+import org.springframework.data.repository.CrudRepository;
+
+import in.ashokit.entities.Employee;
+
+public interface EmployeeRepository 
+	extends CrudRepository<Employee, Integer> {
+
+}

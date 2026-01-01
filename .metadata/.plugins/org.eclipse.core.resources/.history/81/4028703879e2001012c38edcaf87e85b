@@ -1,0 +1,19 @@
+package in.ashokit.beans;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class ReportService {
+
+	public ReportService() {
+		System.out.println("ReportService :: Constructor...");
+	}
+	
+	public void init() {
+		System.out.println("ReportService  :: init() called...");
+	}
+
+	public void destroy() {
+		System.out.println("ReportService  :: destroy() called...");
+	}
+}

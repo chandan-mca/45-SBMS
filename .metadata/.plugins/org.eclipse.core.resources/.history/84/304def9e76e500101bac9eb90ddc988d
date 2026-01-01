@@ -1,0 +1,21 @@
+package in.ashokit.repositories;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.CrudRepository;
+
+import in.ashokit.entities.Employee;
+
+public interface EmployeeRepository extends CrudRepository<Employee, Integer> {
+
+	@Query("from Employee")
+	public List<Employee> getAllEmps();
+
+	@Query("from Employee where empGender=:gender")
+	public List<Employee> getEmpsWithGender(String gender);
+
+	@Query(value = "select * from employee", nativeQuery = true)
+	public List<Employee> getEmpsSQL();
+
+}

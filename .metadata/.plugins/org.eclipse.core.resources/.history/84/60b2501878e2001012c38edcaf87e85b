@@ -1,0 +1,9 @@
+package in.ashokit.bean;
+
+public class ReportService {
+
+	public ReportService() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

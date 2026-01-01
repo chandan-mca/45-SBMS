@@ -53,6 +53,9 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="D:\03.  Ashok IT\03  SBMS\45-SBMS\workspace\24-Spring-data-jpa-app-5"/>
+			<item value="D:\03.  Ashok IT\03  SBMS\45-SBMS\workspace\23-Spring-data-jpa-app-4"/>
+			<item value="D:\03.  Ashok IT\03  SBMS\45-SBMS\workspace\22-Spring-data-jpa-app-3"/>
 			<item value="D:\03.  Ashok IT\03  SBMS\45-SBMS\workspace\06-IOC-App-SI-CI"/>
 			<item value="D:\03.  Ashok IT\03  SBMS\45-SBMS\workspace\05-IOC-App-CI"/>
 			<item value="D:\03.  Ashok IT\03  SBMS\45-SBMS\workspace\04-IOC-App-SI"/>

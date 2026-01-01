@@ -1,0 +1,16 @@
+package in.ashokit.services;
+
+import org.springframework.stereotype.Service;
+
+import in.ashokit.repositories.EmployeeRepository;
+
+@Service
+public class EmployeeService {
+
+	private EmployeeRepository employeeRepository;
+
+	public EmployeeService(EmployeeRepository employeeRepository) {
+		this.employeeRepository = employeeRepository;
+	}
+		
+}

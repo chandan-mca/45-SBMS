@@ -1,0 +1,9 @@
+package in.ashokit.beans;
+
+public class MyAppRunner {
+
+	public MyAppRunner() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
