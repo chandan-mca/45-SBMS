@@ -1,7 +1,0 @@
-package in.ashokit.repositories;
-
-import org.springframework.data.jpa.repository.JpaRepository;
-
-public class ContactsMasterRepo implements JpaRepository<Integer, >{
-
-}

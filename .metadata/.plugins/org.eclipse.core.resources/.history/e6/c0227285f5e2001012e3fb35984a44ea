@@ -1,7 +1,0 @@
-package in.ashokit.repositories;
-
-import in.ashokit.entities.ContactsMasterEntity;
-
-public class ContactsMasterRepo extends CrudRepository<ContactsMasterEntity, Integer >{
-
-}

@@ -1,9 +1,0 @@
-package in.ashokit.beans;
-
-public class MyCmdRunner {
-
-	public MyCmdRunner() {
-		// TODO Auto-generated constructor stub
-	}
-
-}
